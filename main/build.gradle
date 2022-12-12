@@ -45,6 +45,4 @@ android {
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
     implementation dependenciesList.Appcompat
-    implementation project(':recyclerview-swipe')
-    implementation project(':refresh-layout-smart')
 }
