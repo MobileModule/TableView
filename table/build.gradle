@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
 
 android {
     compileSdkVersion androidVersions.compileSdkVersion
@@ -35,4 +36,18 @@ dependencies {
     implementation dependenciesList.Appcompat
     implementation dependenciesList.Recyclerview
     implementation dependenciesList.Material
+}
+
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.druid.table'
+                artifactId = 'tablelib'
+                version = '1.0.1'
+            }
+        }
+    }
 }
