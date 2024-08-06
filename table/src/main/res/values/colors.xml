@@ -52,5 +52,6 @@
     <color name="tabitem_color1">#FFFFFF</color>
 	<color name="tabitem_color2">#F7F8F9</color>
 	<color name="dashline_color">#F0F0F0</color>
+    <color name="warning_red">#F14D4D</color>
 	
 </resources>
